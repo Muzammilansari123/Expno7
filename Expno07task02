@@ -1,10 +1,15 @@
+/* Aim :WAp to calculate sum of two matrix .
+    Use escape sequences to properly format the output.
+   Name : Ansari Mohammad Muzammil Nisar Ahmad     Roll No: 29
+   Division : A        UIN : 241A035   Branch : AIDS
+*/
 #include <stdio.h>
-
 void main() {
     int arr1[50][50], brr1[50][50], crr1[50][50], i, j, n;
 
     printf("\n\nAddition of two Matrices :\n");
     printf("------------------------------\n");
+     // Input elements for both matrices
     printf("Input the size of the square matrix (less than 5): ");
     scanf("%d", &n);
 
@@ -22,13 +27,14 @@ void main() {
             scanf("%d", &brr1[i][j]);
         }
     }
-
+     // Display the matrices first matrix
     printf("\nThe First matrix is :\n");
     for (i = 0; i < n; i++) {
         printf("\n");
         for (j = 0; j < n; j++)
             printf("%d\t", arr1[i][j]);
     }
+     // Display the matrices second matrix
     printf("\nThe Second matrix is :\n");
     for (i = 0; i < n; i++) {
         printf("\n");
@@ -38,7 +44,7 @@ void main() {
     for (i = 0; i < n; i++)
         for (j = 0; j < n; j++)
             crr1[i][j] = arr1[i][j] + brr1[i][j];
-
+    // Display the result of the addition
     printf("\nThe Addition of two matrix is : \n");
     for (i = 0; i < n; i++) {
         printf("\n");
